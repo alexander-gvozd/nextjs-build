@@ -1,13 +1,11 @@
 import Account from "@modules/acccount/components/Account";
 import * as React from "react";
+import { useSelector } from "react-redux";
 
 function Home() {
-  const User = {
-    userId: 1,
-    name: "Capitan Jack",
-  };
+  const user = useSelector((e) => e.user);
 
-  return <Account user={User} />;
+  return <Account user={user} />;
 }
 
 export default Home;

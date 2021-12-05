@@ -4,6 +4,7 @@ import Counter from "@modules/acccount/components/Counter";
 export interface IUser {
   userId: number;
   name: string;
+  email: string;
 }
 
 interface IProps {
